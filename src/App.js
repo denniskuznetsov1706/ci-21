@@ -3,6 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/header';
 import Article from './components/article';
+import MainMenu from './components/mainComponent';
+import MainPage from './components/mainPage';
+import Footer from './components/mainFooter';
 
 
 const obj = {}
@@ -12,6 +15,8 @@ function App() {
 
   const [name, setName] = useState('Vasya')
   const [isYellow, setIsYellow] = useState(true)
+
+  const [tabPage, setTabPage] = useState(1)
 
   
 
@@ -39,7 +44,12 @@ function App() {
 
     (async ()=>{
 
-      let [data, data1] = await Promise.all([fetch('https://api.privatbank.ua/p24api/pubinfo?exchange&coursid=11'), fetch('https://api.privatbank.ua/p24api/pubinfo?exchange&coursid=11')]) 
+      try{
+        let [data, data1] = await Promise.all([fetch('https://api.privatbank.ua/p24api/pubinfo?exchange&coursid=11'), fetch('https://api.privatbank.ua/p24api/pubinfo?exchange&coursid=11')]) 
+      }catch(e){
+        console.log(e)
+      }
+      
      
 
     }
@@ -54,15 +64,13 @@ function App() {
 
   const BodeRender = () => (
     <div>
-      <Header
-        name={name}
-      />
-      <Article
-        name={name}
-        setName={setName}
-        isYellow={isYellow}
-        setIsYellow={setIsYellow}
-      />
+      <MainMenu 
+       
+        setTabPage ={setTabPage}
+       />
+      <MainPage  tabPage ={tabPage}/>
+      <Footer />
+
     </div>
   )
 
