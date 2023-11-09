@@ -1,8 +1,7 @@
 import React from 'react';
-import Home from './menuComponents/Home';
 
 // MainPage component
-const MainPage = ({ tabPage}) => {
+const Home = ({ tabPage}) => {
   // Inline styles
   const containerStyle = {
     display: 'flex',
@@ -31,20 +30,11 @@ const MainPage = ({ tabPage}) => {
 
   return (
     <div style={containerStyle}>
-      <h1 style={headerStyle}>Welcome to Our Website</h1>
-      {tabPage ===1 ?
-       <Home />
-      : tabPage ===2 
-      ?
-      <p style={textStyle}>
-        Explore our wide range of services and products. We aim to deliver exceptional value and satisfaction to all our customers. 
-        Feel free to browse aroungfggfgfgfgffggffgfggf
-      </p>
-      :<p style={textStyle}>
-      Hello
-    </p>}
+          
+       Welcome to home!!!!!!!!!
+   
     </div>
   );
 };
 
-export default MainPage;
+export default Home;
