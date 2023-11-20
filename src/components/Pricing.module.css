@@ -1,0 +1,122 @@
+.container {
+    max-width: 1160px;
+    padding: 0 5px;
+    margin: 0 auto;
+}
+
+.pricing {
+    background-color: rgb(255, 184, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 106px;
+}
+
+.pricing h3 {
+    color: #fff;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.1em;
+    font-size: 26px;
+}
+
+h4 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.1em;
+    color: #333;
+    margin-bottom: 7px; 
+}
+
+.pricing__section {
+    margin: 30px 0;
+}
+
+.pricing__items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.pricing__item {
+    width: 24.6%;
+    border: 1px solid #e6e6e6;
+}
+
+.pricing__header {
+    background: #fcfcfc;
+    text-align: center;
+    padding: 0px 0 0px 0;
+    display: block;
+}
+
+.pricing__item h3 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.pricing_cost {
+    text-align: center;
+    background: #B3B3B3;
+    display: block;
+    overflow: hidden;
+    padding: 11px 0 5px;
+}
+
+.pricing_cost h6 {
+    font-style: italic;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Noto Serif', serif;
+    margin: 0;
+}
+
+.pricing__list {
+    background: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+.pricing__list ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.pricing__list ul li {
+    border-bottom: 1px solid #CFCFCF;
+    list-style: none;
+    padding: 15px 0 15px 0;
+    margin: 0 0 0 0;
+    color: #222;
+    font-size: 18px;
+}
+
+.pricing__action {
+    margin: 0;
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+
+.btn {
+    text-align: center;
+    background: #FFB800;
+    color: #fff;
+    border-radius: 0;
+    padding: 12px 22px;
+    border: 0;
+    text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    .pricing__item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
