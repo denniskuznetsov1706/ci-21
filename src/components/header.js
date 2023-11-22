@@ -1,15 +1,6 @@
 
 
 function Header({name}) {
-
-
-  
-
-  
-
- 
-
-
   return (
     <div style={{
       border:"1px solid green",

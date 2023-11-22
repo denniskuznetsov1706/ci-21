@@ -1,0 +1,195 @@
+.container {
+    max-width: 1160px;
+    padding: 0 5px;
+    margin: 0 auto;
+}
+
+.courses {
+    background-color: rgb(255, 184, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 106px;
+}
+
+.courses h3 {
+    color: #fff;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.1em;
+    font-size: 26px;
+}
+
+.courses__main {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.courses__list {
+    display: flex;
+    margin-bottom: 30px;
+    list-style: none;
+}
+
+.courses__list_item {
+    margin: 0;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid #F58A2E;
+    margin-right: 15px;
+    padding: 15px 20px;
+}
+
+.courses__list_item:hover {
+    cursor: pointer;
+}
+
+.courses__list_link {
+    text-decoration: none;
+    color: #F58A2E;
+}
+
+
+.active {
+    background-color: #F58A2E;
+    text-decoration: none;
+}
+
+.active a {
+    color: #fff;
+}
+
+.courses__projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.courses__projects_item {
+    width: 23%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.courses__projects_item:visited {
+    color: transparent;
+}
+
+.courses_img {
+    width: 100%;
+    height: 200px;
+}
+
+.courses__projects_item_bottom {
+    position: relative;
+}
+
+.courses__projects_item_bottom h3 {
+    color: #428bca;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.courses__projects_item_bottom p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    text-align: center;
+    background: #FFB800;
+    color: #fff;
+    border-radius: 0;
+    padding: 12px 22px;
+    border: 0;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.courses__modal {
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.hidden {
+    visibility: hidden !important;
+}
+
+.courses__content {
+    position: relative;
+    width: 828px;
+    height: 550px;
+}
+
+.courses__content_title {
+    padding: 3px 30px 6px;
+    background: #373737;
+    margin-top: -6px;
+}
+
+.courses__content_title p{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.courses__content_img{
+    width: 100%;
+    height: 100%;
+}
+
+.courses__close_btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 9000;
+    outline: none;
+    border: 1px solid #F58A2E;
+    background-color: transparent;
+    font-size: 25px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all .2s ease-in-out ;
+}
+
+.courses__close_btn:hover {
+    transform: scale(1.5);
+}
+
+.courses__btn_prev, .courses__btn_next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background-color: #000;
+    border-radius: 50%;
+    outline: none;
+    color: #fff;
+    border: none;
+    padding: 12px 12px;
+    cursor: pointer;
+}
+
+
+.courses__btn_prev {
+    left: 10px;
+}
+
+.courses__btn_next {
+    right: 10px;
+}
